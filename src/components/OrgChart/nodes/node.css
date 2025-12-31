@@ -1,0 +1,151 @@
+/* ===========================
+   ORG NODE CARD
+=========================== */
+
+.org-node {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px 14px 16px;
+  width: 220px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eef1f6;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.org-node:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* ACTIVE NODE */
+.org-node.active {
+  background: #ecfeff;
+  border: 2px solid #38bdf8;
+}
+
+/* ===========================
+   ACTIVE BADGE
+=========================== */
+
+.org-node .status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #16a34a;
+  background: #dcfce7;
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.org-node .content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.org-node .content img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.org-node .title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.org-node .subtitle {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* ===========================
+   ADD BUTTON (+)
+=========================== */
+
+.org-node .add-btn {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(34, 197, 94, 0.45);
+  transition: all 0.2s ease;
+  z-index: 999;
+}
+
+.org-node .add-btn:hover {
+  background: #16a34a;
+  transform: translateX(-50%) scale(1.08);
+}
+
+/* ===========================
+   REACT FLOW HANDLES
+=========================== */
+
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border: 2px solid #ffffff;
+}
+
+.react-flow__handle-top {
+  top: -6px;
+}
+
+.react-flow__handle-bottom {
+  bottom: -6px;
+}
+
+/* ===========================
+   GROUP NODE
+=========================== */
+
+.group-node {
+  width: 100%;
+  height: 100%;
+  border: 2px dashed #d946ef;
+  border-radius: 18px;
+  background: rgba(217, 70, 239, 0.06);
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* GROUP LABEL */
+.group-title {
+  position: absolute;
+  top: -14px;
+  left: 16px;
+  background: #ffffff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7e22ce;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* ===========================
+   GROUP HANDLE
+=========================== */
+
+.group-node .react-flow__handle {
+  background: #d946ef;
+}

@@ -77,4 +77,7 @@ body {
 .react-flow__attribution {
   display: none !important;
 }
+.root{
+  background-color: #dfd7d1;
+}
 
